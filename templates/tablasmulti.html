@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<center><h2>Tablas de multiplicar</h2></center>
+
+<form action="/tablasm" method="POST">
+    <div  class="container">
+        <div class="from-row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="base" class="from-label">Ingrese numero</label>
+                    <input type="text" class="from-control" name="num" id="num"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn-primary">Enviar </button>
+</form>
+
+{% if tabla %}
+    <br><br>
+    <h3>Tabla de multiplicar:</h3>
+    <ul>
+    {% for item in tabla %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block content %}
+ <br>
+ <center><h2>Conversion de grados</h2></center>
+
+ <form action="/tablas" method="POST">
+    <div  class="container">
+        <div class="from-row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="grados" class="from-label">Ingrese grados fahrenheit a convertir</label>
+                    <input type="text" class="from-control" name="gradosF" id="gradosF"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn-primary">Convertir</button>
+    <br>
+    <br>
+    <br>
+    <p>{{res}}</p>
+ </form>
+ <br>
+ <br>
+ <br>
+ <br>
+
+{% endblock %} 

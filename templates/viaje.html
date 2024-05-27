@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block content %}
+ <br>
+ <center><h2>Area de un Triangulo</h2></center>
+
+ <form action="/viaje" method="POST">
+    <div  class="container">
+        <div class="from-row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="base" class="from-label">Ingrese cantidad de alumnos</label>
+                    <input type="text" class="from-control" name="ca" id="ca"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn-primary">calcular</button>
+    <br>
+    <br>
+    <br>
+    <p>costo por alumno sera:{{res}}</p>
+    <p>costo total sera:{{res1}}</p>
+ </form>
+ <br>
+ <br>
+ <br>
+ <br>
+
+{% endblock %} 

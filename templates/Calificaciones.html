@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block content %}
+ <br>
+ <center><h2>Calificaciones</h2></center>
+
+ <form action="/cali" method="POST">
+    <div  class="container">
+        <div class="from-row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label for="cal" class="from-label">Ingrese su Calificacion</label>
+                    <input type="text" class="from-control" name="calif" id="calif"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn-primary">Convertir</button>
+    <br>
+    <br>
+    <br>
+    <p>Su calificacion es: {{res}}</p>
+ </form>
+ <br>
+ <br>
+ <br>
+ <br>
+
+{% endblock %} 
